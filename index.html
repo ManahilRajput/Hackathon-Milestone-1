@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+        <title>RESUME MAKER</title>
+</head>
+
+<body>
+    <h1>STATIC INTERACTIVE RESUME BUILDER</h1>
+
+    <form id="resume">
+        
+        <fieldset>
+            <legend> <h3>Personal Information</h3> </legend>
+            <button type="button" id="togglePersonalInfo">Toggle Personal Info</button>
+            <div id="personalInfoSection">
+                <label for="name">Name:</label>
+                <input type="text" name="name" placeholder="enter your name" required/><br/><br/>
+                <label for="e-mail">E-mail</label>
+                <input type="email" name="email" required placeholder="enter your e-mail"/><br/><br/>
+                <label for="number">Number:</label>
+                <input type="number" name="number" placeholder="enter your number"/><br/><br/>
+                <label for="address">Address:</label>
+                <input type="text" name="ADDRESS" placeholder="enter your address" required/><br/><br/>
+                <label for="image">Image:</label>
+                <input type="file" placeholder="select image" name="image" /><br/><br/>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend> <h3>Education</h3></legend>
+            <button type="button" id="toggleEducation">Toggle Education</button>
+            <div id="educationSection">
+                <label for="education">Education:</label>
+                <textarea width="100px" name="education" rows="5" required></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend> <h3>Work Experience</h3></legend>
+            <button type="button" id="toggleExperience">Toggle Work Experience</button>
+            <div id="experienceSection">
+                <label for="experience">Experience:</label>
+                <textarea name="experience" rows="8" required></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend><h3>Skills</h3></legend>
+            <button type="button" id="toggleSkills">Toggle Skills</button>
+            <div id="skillsSection">
+                <label for="skills">Skills:</label>
+                <textarea name="skills" rows="5" required></textarea>
+            </div>
+        </fieldset>
+        <br/>
+        <button type="submit">Generate Resume</button>
+
+    </form>
+    <script src="type.js"></script>
+</body>
+<br/>
+<footer>made by Manahil Rajput</footer>
+</html>
